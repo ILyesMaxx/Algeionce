@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/annonceimageaffiche"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="dsfsdfsdf"
+                android:id="@+id/titleaffiche"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/shortdescaffiche"
+                android:text="sdfsd
+df
+sdf
+sdf"
+                android:gravity="left|center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/longdescaffiche"
+                android:text="sdfsd
+df
+sdf
+sdf"
+                android:gravity="left|center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/priceAffiche"
+                android:gravity="center"
+                android:text="1500DA"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="Contact me:"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/profiledespaly"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilenamedesplay"
+                    android:text="fdgdfgdfg"/>
+                    <TextView
+                        android:id="@+id/phoneprofile"
+                        android:text="Not Yet Registered"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <com.tylersuehr.chips.ChipsInputLayout
+                android:id="@+id/chips_input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                map:hideKeyboardOnChipClick="true"
+                android:clickable="false"
+                android:hint=""
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                app:chip_showDetails="false"
+                app:allowCustomChips="false"
+                app:chip_showDelete="false"
+                />
+
+        </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:context=".MapsActivity" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

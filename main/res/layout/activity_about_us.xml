@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/justashit"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Une solution d'annocement pour les gens qui veullent partager des annonces que soit pour les vents ou les achats,
+par l'utilisation de leur propre mobile a l'aide de la localition globale(GPS)."
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="developper par : Bouteghmas Ilyes,
+                             Zeggada Salah eddin
+
+pour nous contacter ou reporter des bugs : ilyes.bouteghmas@univ-constantine2.dz"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="443dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

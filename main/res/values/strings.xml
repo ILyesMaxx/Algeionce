@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Algeioncc</string>
+
+
+    <string name="err_name">The name field is requid.</string>
+    <string name="err_title">The title field is requid.</string>
+    <string name="err_email">The email must be a valid email address.</string>
+    <string name="err_password">The password must be at least 6 characters.</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="err_shot">The shot description field is requid.</string>
+    <string name="err_long">The long description field is requid.</string>
+    <string name="err_price">The price field is requid.</string>
+    <string name="err_categores">The categoris field is requid.</string>
+</resources>

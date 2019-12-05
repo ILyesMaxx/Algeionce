@@ -1,0 +1,51 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/toolbar"></include>
+
+        <EditText
+            android:hint="Search"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/searchnot"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/searchnot"
+            android:id="@+id/recycleVeiwAnnonce"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/refresh"
+            android:text="refresh" />
+
+
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_height="match_parent"
+        android:layout_width="250dp"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerview"
+        app:menu="@menu/menudrawble"
+        android:id="@+id/navigationv">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

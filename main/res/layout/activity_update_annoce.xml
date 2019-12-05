@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/form_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Update annonce" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <com.tylersuehr.chips.ChipsInputLayout
+                    android:id="@+id/chips_inputupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Entry you categoris"
+                    android:textColorHint="#757575"
+                    android:textColor="#212121"
+                    app:chip_showDetails="true"
+                    app:allowCustomChips="false" />
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_titleupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/title_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/title_icon"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_shotdescupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shot description">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_description_black_24dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_longdescupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Long description">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_description_black_24dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_priceupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/price"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/price"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.widget.RadioGroup
+                android:id="@+id/radiosellbyupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/sellredioupdate"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:checked="false"
+                    android:text="Sell" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/bayredioupdate"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:checked="false"
+                    android:text="Bay" />
+            </android.widget.RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_catigorisupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Categries">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/creat_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/creat_icon"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/til_imgupdate"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_getlocationupdate"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Position" />
+
+
+                <Button
+                    android:id="@+id/btn_choseimgfromgalyupdate"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Choise From galery" />
+
+                <Button
+                    android:id="@+id/btn_choseimgfromcameraupdate"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="take a pictur" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_createupdate"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Update" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

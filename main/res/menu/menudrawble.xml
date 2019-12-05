@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/group_item"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_profile"
+            android:checked="false"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menu_add"
+            android:checked="false"
+            android:icon="@drawable/creat_icon"
+            android:title="Create an Annoncemnt" />
+
+
+    </group>
+    <group
+        android:id="@+id/group_item2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/menu_about"
+        android:checked="false"
+        android:icon="@drawable/about_icon"
+        android:title="About" />
+    <item
+        android:id="@+id/menu_exit"
+        android:checked="false"
+        android:icon="@drawable/exit_icon"
+        android:title="Exit" />
+    </group>
+    <group
+        android:id="@+id/group_item3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_logout"
+            android:checked="false"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

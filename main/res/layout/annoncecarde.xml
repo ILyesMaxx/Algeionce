@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentcardviewl"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardElevation="3dp"
+    cardview:contentPadding="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="90dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativelayoutmaincontent"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/annonceminiphoto"
+            android:src="@drawable/ic_description_black_24dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/annonceminititle"
+            android:text="Phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/annonceminiphoto" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutdesc"
+            android:layout_width="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/annonceminiphoto"
+            android:layout_alignBottom="@id/annonceminiphoto"
+            android:layout_below="@+id/annonceminititle"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/annonceminidesc"
+                android:text="dsfsdfsdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/annonceminicatego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="Categoris: dfd" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:layout_alignBottom="@id/annonceminiphoto"
+            android:layout_toRightOf="@+id/relativelayoutdesc"
+            android:layout_below="@id/annonceminititle">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="2018/05/12"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/annoncepublicher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="by: ilyesmax" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
